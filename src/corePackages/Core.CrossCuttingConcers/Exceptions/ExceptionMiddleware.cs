@@ -14,7 +14,7 @@ public class ExceptionMiddleware
         _next = next;
     }
 
-    public async Task Invoke(HttpContext context)
+    public async Task Invoke(HttpContext context) //Tüm projede bir tane try cache var. Bütün istekler buradan geçiyor.
     {
         try
         {
